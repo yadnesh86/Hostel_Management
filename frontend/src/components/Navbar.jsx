@@ -18,9 +18,12 @@ const Navbar = () => {
           <Link to="/hostel" className="hover:text-yellow-300 transition-colors duration-200">
             Hostel
           </Link>
-          {/* <Link to="/dashboard" className="hover:text-yellow-300 transition-colors duration-200">
-            Dashboard
-          </Link> */}
+          <Link to="/user_dashboard" className="hover:text-yellow-300 transition-colors duration-200">
+            User Dashboard
+          </Link>
+          <Link to="/admin_dashboard" className="hover:text-yellow-300 transition-colors duration-200">
+            Admin Dashboard
+          </Link>
           <Link to="/login" className="hover:text-yellow-300 transition-colors duration-200">
             Login
           </Link>

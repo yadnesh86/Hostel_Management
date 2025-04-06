@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Dashboard from "./pages/Dashboard";
+import User_Dashboard from "./pages/User_Dashboard";
 import Rooms from "./pages/Rooms";
 import Hostel from "./pages/Hostel";
 import Navbar from "./components/Navbar";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/hostel" element={<Hostel />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/user_dashboard" element={<User_Dashboard />} />
           <Route path="/rooms" element={<Rooms />} />
         </Routes>
         <Footer />
