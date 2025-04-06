@@ -1,0 +1,1128 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["hello", "hi", "hey"],
+        "responses": ["Hello! How can I help you?", "Hi there! Need any assistance?"]
+      },
+      {
+        "tag": "room_availability",
+        "patterns": ["do you have rooms?", "room availability", "are rooms available?"],
+        "responses": ["Yes, we have rooms available for students.", "Rooms are available! Would you like to book one?"]
+      },
+      {
+        "tag": "wifi",
+        "patterns": ["do you have wifi?", "wifi available?", "internet connection?"],
+        "responses": ["Yes, we provide free WiFi in the hostel.", "WiFi is available 24/7."]
+      },
+      {
+        "tag": "food",
+        "patterns": ["is food available?", "meals", "hostel food"],
+        "responses": ["The hostel provides 3 meals per day.", "We offer breakfast, lunch, and dinner."]
+      },
+      {
+        "tag": "pricing",
+        "patterns": [
+          "how much does it cost",
+          "room rates",
+          "price per night",
+          "hostel fees"
+        ],
+        "responses": [
+          "Our rates start at $25 per night for a shared room and $50 for a private room.",
+          "Room pricing varies by type—shared dorms are $25/night, private rooms $50/night."
+        ]
+      },
+      {
+        "tag": "booking",
+        "patterns": [
+          "i want to book a room",
+          "reserve a bed",
+          "make a reservation",
+          "book for two nights"
+        ],
+        "responses": [
+          "Sure—what dates are you looking at?",
+          "I'd be happy to help you reserve a room. When would you like to check in?"
+        ]
+      },
+      {
+        "tag": "check_in",
+        "patterns": [
+          "what time is check in",
+          "check in time",
+          "when can i arrive",
+          "arrival time"
+        ],
+        "responses": [
+          "Check‑in begins at 2:00 PM daily.",
+          "You can check in any time after 2 PM."
+        ]
+      },
+      {
+        "tag": "check_out",
+        "patterns": [
+          "what time is check out",
+          "check out time",
+          "when do i have to leave",
+          "departure time"
+        ],
+        "responses": [
+          "Check‑out is by 11:00 AM.",
+          "Please check out before 11 AM so we can prepare the room for incoming guests."
+        ]
+      },
+      {
+        "tag": "facilities",
+        "patterns": [
+          "what facilities do you have",
+          "gym availability",
+          "common areas",
+          "amenities"
+        ],
+        "responses": [
+          "We have a gym, lounge area, study room, and rooftop terrace.",
+          "Our facilities include a fully equipped gym, game room, and communal kitchen."
+        ]
+      },
+      {
+        "tag": "laundry",
+        "patterns": [
+          "is there a laundry service",
+          "can i wash clothes",
+          "laundry facilities",
+          "washing machine"
+        ],
+        "responses": [
+          "Yes, we have coin‑operated washers and dryers on each floor.",
+          "Laundry machines are available 24/7 in the basement."
+        ]
+      },
+      {
+        "tag": "complaint",
+        "patterns": [
+          "i have a problem",
+          "complaint",
+          "noise issue",
+          "room is dirty"
+        ],
+        "responses": [
+          "I’m sorry to hear that—could you provide more details so we can resolve it?",
+          "Please let me know exactly what’s wrong and I’ll get someone to help right away."
+        ]
+      },
+      {
+        "tag": "contact",
+        "patterns": [
+          "how can i reach you",
+          "contact details",
+          "phone number",
+          "email address"
+        ],
+        "responses": [
+          "You can call us at +1 (555) 123‑4567 or email hostel@example.com.",
+          "Feel free to ring us at +1 555‑1234 or drop a line at hostel@example.com."
+        ]
+      },
+      {
+        "tag": "house_rules",
+        "patterns": [
+          "what are the rules",
+          "house rules",
+          "quiet hours",
+          "hostel policy"
+        ],
+        "responses": [
+          "Quiet hours are from 10 PM to 7 AM. No smoking indoors, please.",
+          "Please respect others: no loud music after 10 PM and no guests in the rooms after midnight."
+        ]
+      },
+      {
+        "tag": "emergency",
+        "patterns": [
+          "emergency contact",
+          "urgent help",
+          "fire alarm",
+          "medical issue"
+        ],
+        "responses": [
+          "In case of emergency, dial 911 immediately. For hostel staff assistance, press the red button in the lobby.",
+          "If there’s an emergency, call 911 first, then notify the front desk at extension 0."
+        ]
+      },
+      {
+        "tag": "payment_methods",
+        "patterns": [
+          "how can i pay",
+          "payment options",
+          "credit card",
+          "cash or card"
+        ],
+        "responses": [
+          "We accept cash, Visa, MasterCard, and mobile payments (Apple Pay, Google Pay).",
+          "Payments can be made by cash, credit/debit card, or via PayPal."
+        ]
+      },
+      {
+        "tag": "nearby_attractions",
+        "patterns": [
+          "what is there to do",
+          "nearby attractions",
+          "things to see",
+          "local spots"
+        ],
+        "responses": [
+          "We’re close to the city museum, a riverfront park, and several cafes within walking distance.",
+          "Nearby you’ll find a cinema, art gallery, and a lovely riverside promenade."
+        ]
+      },
+      {
+        "tag": "cancellation_policy",
+        "patterns": [
+          "what is your cancellation policy",
+          "can i cancel my booking",
+          "refund on cancellation",
+          "cancel reservation"
+        ],
+        "responses": [
+          "You can cancel free of charge up to 24 hours before check‑in. After that, a one‑night fee applies.",
+          "Free cancellations are allowed until one day prior; cancellations within 24 hours incur a fee of one night."
+        ]
+      },
+      {
+        "tag": "deposit",
+        "patterns": [
+          "do i need a deposit",
+          "security deposit",
+          "deposit required",
+          "advance payment"
+        ],
+        "responses": [
+          "We require a refundable security deposit of $50 at check‑in.",
+          "A $50 deposit is held on your card and refunded at checkout if there’s no damage."
+        ]
+      },
+      {
+        "tag": "pet_policy",
+        "patterns": [
+          "are pets allowed",
+          "can i bring my dog",
+          "pet friendly",
+          "service animals"
+        ],
+        "responses": [
+          "Sorry, we do not allow pets, except for certified service animals.",
+          "Pets aren’t permitted, but service animals are welcome with prior notice."
+        ]
+      },
+      {
+        "tag": "accessibility",
+        "patterns": [
+          "is it accessible",
+          "wheelchair access",
+          "accessible rooms",
+          "disability access"
+        ],
+        "responses": [
+          "Yes, we have ground‑floor rooms and an elevator for wheelchair users.",
+          "Our facility is wheelchair accessible and offers ADA‑compliant rooms."
+        ]
+      },
+      {
+        "tag": "security",
+        "patterns": [
+          "is it safe",
+          "security measures",
+          "locks",
+          "cctv"
+        ],
+        "responses": [
+          "We have 24/7 security cameras and electronic keycard access.",
+          "Your safety is our priority—CCTV and staff patrols operate around the clock."
+        ]
+      },
+      {
+        "tag": "lost_and_found",
+        "patterns": [
+          "i lost something",
+          "lost and found",
+          "lost my phone",
+          "misplaced item"
+        ],
+        "responses": [
+          "Please describe the item and where you think you left it; we’ll check our lost and found.",
+          "Let us know what you lost and we’ll see if it’s been turned in at reception."
+        ]
+      },
+      {
+        "tag": "parking",
+        "patterns": [
+          "parking available",
+          "car parking",
+          "parking fee",
+          "where to park"
+        ],
+        "responses": [
+          "We offer limited on‑site parking at $10 per day, first‑come, first‑serve.",
+          "On‑site parking is available for $10/day; street parking is free after 6 PM."
+        ]
+      },
+      {
+        "tag": "smoking_policy",
+        "patterns": [
+          "can i smoke",
+          "smoking allowed",
+          "smoking rooms",
+          "smoke"
+        ],
+        "responses": [
+          "This is a non‑smoking property; there is a designated smoking area outside.",
+          "Smoking is prohibited indoors; please use the outdoor smoking zone."
+        ]
+      },
+      {
+        "tag": "travel_desk",
+        "patterns": [
+          "can you book tours",
+          "travel desk",
+          "excursions",
+          "tour booking"
+        ],
+        "responses": [
+          "Yes, our travel desk can arrange city tours, bike rentals, and day trips.",
+          "We offer tour booking services at the front desk for museums, hikes, and more."
+        ]
+      },
+      {
+        "tag": "group_booking",
+        "patterns": [
+          "group discount",
+          "book for group",
+          "group reservation",
+          "large group"
+        ],
+        "responses": [
+          "For groups of 5 or more, please contact us directly for special rates.",
+          "We offer group discounts—let us know your group size and dates."
+        ]
+      },
+      {
+        "tag": "special_requests",
+        "patterns": [
+          "extra towels",
+          "late check out",
+          "room with view",
+          "bed near window"
+        ],
+        "responses": [
+          "Let us know your request and we’ll do our best to accommodate.",
+          "We’ll note your preference; while not guaranteed, we’ll try to fulfill it."
+        ]
+      },
+      {
+        "tag": "covid_measures",
+        "patterns": [
+          "covid policy",
+          "health measures",
+          "sanitization",
+          "covid safety"
+        ],
+        "responses": [
+          "We follow enhanced cleaning protocols and provide hand sanitizer stations throughout the property.",
+          "Our rooms are deep‑cleaned between stays and common areas are sanitized hourly."
+        ]
+      },
+      {
+        "tag": "early_check_in",
+        "patterns": [
+          "can i check in early",
+          "early check in",
+          "arrive before 2pm",
+          "early arrival"
+        ],
+        "responses": [
+          "Early check‑in is subject to availability and costs an extra $10. Let me know your arrival time!",
+          "We can often accommodate early arrivals for a small fee—what time would you like to check in?"
+        ]
+      },
+      {
+        "tag": "luggage_storage",
+        "patterns": [
+          "store my bags",
+          "luggage storage",
+          "leave luggage",
+          "hold my bags"
+        ],
+        "responses": [
+          "We offer complimentary luggage storage before check‑in and after check‑out.",
+          "Feel free to leave your bags with us at no extra charge—just stop by reception."
+        ]
+      },
+      {
+        "tag": "kitchen_rules",
+        "patterns": [
+          "can i use the kitchen",
+          "kitchen rules",
+          "cook in hostel",
+          "communal kitchen"
+        ],
+        "responses": [
+          "The communal kitchen is open 6 AM–11 PM. Please clean up after yourself and label your food.",
+          "You’re welcome to use the kitchen—just wash your dishes and store items in the marked shelves."
+        ]
+      },
+      {
+        "tag": "roommate_preference",
+        "patterns": [
+          "female only dorm",
+          "roommate preference",
+          "mixed dorm",
+          "same gender room"
+        ],
+        "responses": [
+          "We have both mixed and gender‑specific dorms. Which would you prefer?",
+          "Let me know if you’d like a female‑only or mixed dorm, and I’ll check availability."
+        ]
+      },
+      {
+        "tag": "dorm_options",
+        "patterns": [
+          "family rooms",
+          "private dorm",
+          "single bed dorm",
+          "double bed dorm"
+        ],
+        "responses": [
+          "We offer private rooms, 4‑, 6‑, and 8‑bed dorms, plus family rooms with en‑suite baths.",
+          "Our room types include private doubles, single beds in dorms of various sizes, and family suites."
+        ]
+      },
+      {
+        "tag": "ID_requirements",
+        "patterns": [
+          "what ID do you need",
+          "ID requirements",
+          "passport needed",
+          "photo ID"
+        ],
+        "responses": [
+          "We require a valid photo ID (passport or driver’s license) at check‑in.",
+          "Please have your passport or national ID ready when you arrive."
+        ]
+      },
+      {
+        "tag": "long_term_stay",
+        "patterns": [
+          "stay for a month",
+          "long term rates",
+          "monthly stay",
+          "extended stay"
+        ],
+        "responses": [
+          "We offer discounted monthly rates—let me know your dates and I’ll get you a quote.",
+          "Extended‑stay guests receive 15% off nightly rates. When would you like to start?"
+        ]
+      },
+      {
+        "tag": "cleaning_service",
+        "patterns": [
+          "room cleaning",
+          "housekeeping",
+          "clean my room",
+          "room service cleaning"
+        ],
+        "responses": [
+          "Rooms are cleaned daily between 10 AM and 2 PM. Let us know if you’d like to skip a day.",
+          "Housekeeping runs every morning—please leave your ‘Clean Room’ card outside your door."
+        ]
+      },
+      {
+        "tag": "ironing_service",
+        "patterns": [
+          "iron clothes",
+          "ironing board",
+          "laundry pressing",
+          "iron service"
+        ],
+        "responses": [
+          "We have irons and boards available—just ask at reception for one.",
+          "Ironing facilities are in the laundry room; you can borrow the iron free of charge."
+        ]
+      },
+      {
+        "tag": "airport_shuttle",
+        "patterns": [
+          "airport shuttle",
+          "transfer from airport",
+          "airport pickup",
+          "shuttle service"
+        ],
+        "responses": [
+          "We offer an airport shuttle for $20 one‑way. Would you like to book it?",
+          "Our shuttle runs hourly—let me know your flight details and I’ll reserve your spot."
+        ]
+      },
+      {
+        "tag": "public_transport",
+        "patterns": [
+          "nearest bus stop",
+          "public transport",
+          "how to get downtown",
+          "train station"
+        ],
+        "responses": [
+          "The bus stop is 2 minutes away—take Bus 5 to the city center every 15 minutes.",
+          "The main train station is a 10‑minute walk. I can send you directions if you like."
+        ]
+      },
+      {
+        "tag": "spa_hours",
+        "patterns": [
+          "do you have a spa",
+          "spa hours",
+          "wellness center",
+          "spa facility"
+        ],
+        "responses": [
+          "Our spa and wellness center are open 8 AM–8 PM daily. Treatments available on request.",
+          "Feel free to visit the spa between 8 AM and 8 PM. Let us know if you’d like to book a massage."
+        ]
+      },
+      {
+        "tag": "bar_service",
+        "patterns": [
+          "do you have a bar",
+          "bar service",
+          "drinks available",
+          "alcohol"
+        ],
+        "responses": [
+          "There is no Drinking allowed in Hostel."
+        ]
+      },
+      {
+        "tag": "hostel_events",
+        "patterns": [
+          "any events tonight",
+          "hostel activities",
+          "social events",
+          "game night"
+        ],
+        "responses": [
+          "Tonight we’re hosting a pub quiz at 8 PM in the common room. Everyone’s welcome!",
+          "Check our events board—there’s a movie screening at 7 PM and a group dinner at 9 PM."
+        ]
+      },
+      {
+        "tag": "library_access",
+        "patterns": [
+          "do you have a library",
+          "reading room",
+          "book collection",
+          "study materials"
+        ],
+        "responses": [
+          "We have a small library on the second floor, open 24/7 with books and magazines.",
+          "Our reading room is next to reception and has free WiFi and study desks."
+        ]
+      },
+      {
+        "tag": "printing_scanning",
+        "patterns": [
+          "can i print documents",
+          "printing service",
+          "scan documents",
+          "photocopy"
+        ],
+        "responses": [
+          "Yes, we offer printing and scanning at $0.10 per page. Just ask at the front desk.",
+          "Printing and photocopying are available—bring your files on a USB or email them to us."
+        ]
+      },
+      {
+        "tag": "bicycle_rental",
+        "patterns": [
+          "bike rental",
+          "rent a bicycle",
+          "bike hire",
+          "cycle"
+        ],
+        "responses": [
+          "We rent bikes for $15/day. Let me know how many you need and for how long.",
+          "Bicycle rentals are available at the front desk—$10 for 4 hours or $15 for a full day."
+        ]
+      },
+      {
+        "tag": "gaming_room",
+        "patterns": [
+          "is there a game room",
+          "play games",
+          "table tennis",
+          "board games"
+        ],
+        "responses": [
+          "Our game room has table tennis, foosball, and board games—open 24/7.",
+          "Feel free to use the game area on the ground floor; we’ve got plenty of board games and consoles."
+        ]
+      },
+      {
+        "tag": "movie_night",
+        "patterns": [
+          "movie night",
+          "film screening",
+          "watch a movie",
+          "cinema"
+        ],
+        "responses": [
+          "We host a movie night every Friday at 8 PM in the lounge—popcorn provided!",
+          "Friday’s film screening starts at 8 PM. Check the bulletin for this week’s title."
+        ]
+      },
+      {
+        "tag": "study_room_booking",
+        "patterns": [
+          "book study room",
+          "reserve study area",
+          "group study",
+          "study space"
+        ],
+        "responses": [
+          "You can reserve the study room for up to 2 hours at a time via our online portal or at reception.",
+          "Our quiet study room is free to book—just let us know your preferred time slot."
+        ]
+      },
+      {
+        "tag": "language_exchange",
+        "patterns": [
+          "language exchange",
+          "practice languages",
+          "meet locals",
+          "conversation partner"
+        ],
+        "responses": [
+          "We host a language exchange every Tuesday at 6 PM in the common area.",
+          "Join our weekly language meetup—Tuesdays at 6 PM. It’s a great way to practice and make friends!"
+        ]
+      },
+      {
+        "tag": "volunteer_programs",
+        "patterns": [
+          "volunteer opportunities",
+          "help around hostel",
+          "work exchange",
+          "volunteer here"
+        ],
+        "responses": [
+          "We offer work‑exchange programs—help with reception or events in exchange for a discount.",
+          "Interested in volunteering? We have shifts available in housekeeping and guest services."
+        ]
+      },
+      {
+        "tag": "maintenance_request",
+        "patterns": [
+          "something is broken",
+          "fix my room",
+          "maintenance",
+          "repair request"
+        ],
+        "responses": [
+          "I’m sorry—please describe the issue and we’ll send maintenance right away.",
+          "Let us know what needs fixing, and we’ll have someone take care of it ASAP."
+        ]
+      },
+      {
+        "tag": "locker_rental",
+        "patterns": [
+          "rent a locker",
+          "secure storage",
+          "locker key",
+          "lockers"
+        ],
+        "responses": [
+          "We have lockers available for $2/day—ask at reception for a key.",
+          "Secure lockers are on each floor; just pay $2/day and we’ll assign you one."
+        ]
+      },
+      {
+        "tag": "wake_up_call",
+        "patterns": [
+          "wake me up",
+          "wake up call",
+          "morning call",
+          "alarm service"
+        ],
+        "responses": [
+          "We offer wake‑up calls—what time would you like?",
+          "Sure, what time should we call you in the morning?"
+        ]
+      },
+      {
+        "tag": "postal_service",
+        "patterns": [
+          "mail letters",
+          "send mail",
+          "postal service",
+          "receive packages"
+        ],
+        "responses": [
+          "We can receive packages for you and hold mail at reception.",
+          "Feel free to send mail here; just address it with your name and 'hostel reception'."
+        ]
+      },
+      {
+        "tag": "bike_storage",
+        "patterns": [
+          "bike storage",
+          "where to keep bike",
+          "store my bike",
+          "bicycle parking"
+        ],
+        "responses": [
+          "We have a secure bike storage room—let us know if you'd like access.",
+          "Your bike can be locked in our storage area free of charge."
+        ]
+      },
+      {
+        "tag": "local_sim",
+        "patterns": [
+          "buy SIM card",
+          "local SIM",
+          "cell phone SIM",
+          "mobile data"
+        ],
+        "responses": [
+          "We sell local SIM cards at reception for $10 with 5 GB data.",
+          "Ask at the front desk for a local SIM; we have prepaid options available."
+        ]
+      },
+      {
+        "tag": "atm_nearby",
+        "patterns": [
+          "ATM",
+          "cash machine",
+          "where is ATM",
+          "cash withdrawal"
+        ],
+        "responses": [
+          "The nearest ATM is 3 minutes away on Main Street.",
+          "There’s a bank ATM two blocks down; head left at the corner."
+        ]
+      },
+      {
+        "tag": "electricity_outage",
+        "patterns": [
+          "power cut",
+          "electricity outage",
+          "no power",
+          "lights are out"
+        ],
+        "responses": [
+          "We’re aware of a brief outage; maintenance is on it and power should return soon.",
+          "Sorry for the inconvenience—our team is working to restore electricity ASAP."
+        ]
+      },
+      {
+        "tag": "room_upgrade",
+        "patterns": [
+          "upgrade my room",
+          "room upgrade",
+          "better room",
+          "move rooms"
+        ],
+        "responses": [
+          "We can check availability for an upgrade; there may be an additional fee.",
+          "Let me see if we have a larger room free—upgrades start at $15 extra per night."
+        ]
+      },
+      {
+        "tag": "birthday_arrangements",
+        "patterns": [
+          "birthday celebration",
+          "birthday party",
+          "special occasion",
+          "birthday cake"
+        ],
+        "responses": [
+          "We can arrange a birthday cake and decorations—just let us know the details.",
+          "Happy birthday in advance! We offer celebration packages; would you like more info?"
+        ]
+      },
+      {
+        "tag": "children_policy",
+        "patterns": [
+          "kids allowed",
+          "children stay",
+          "family policy",
+          "child under 12"
+        ],
+        "responses": [
+          "Children under 12 stay free in family rooms; please mention ages when booking.",
+          "We welcome children; family rooms are available—just let us know ages."
+        ]
+      },
+      {
+        "tag": "temperature_control",
+        "patterns": [
+          "air conditioning",
+          "temperature control",
+          "fan in room",
+          "heating"
+        ],
+        "responses": [
+          "Each room has adjustable AC and heating controls—just use the panel by the door.",
+          "You can set your preferred temperature with the thermostat in your room."
+        ]
+      },
+      {
+        "tag": "feedback",
+        "patterns": [
+          "leave feedback",
+          "suggestions",
+          "rate your stay",
+          "comments"
+        ],
+        "responses": [
+          "We’d love your feedback—feel free to fill out our survey or tell us now.",
+          "Your input helps us improve! Would you like to share any comments?"
+        ]
+      },
+      {
+        "tag": "recycling_policy",
+        "patterns": [
+          "recycling",
+          "waste disposal",
+          "trash bins",
+          "garbage separation"
+        ],
+        "responses": [
+          "We have recycling bins for paper, plastic, and glass in the kitchen area.",
+          "Please sort your waste into the labeled bins in the common area."
+        ]
+      },
+      {
+        "tag": "hostel_safety",
+        "patterns": [
+          "are hostels safe",
+          "is it safe to stay",
+          "safety measures",
+          "security in hostel"
+        ],
+        "responses": [
+          "Yes—hostels are just as safe as hotels and offer free secure storage for your belongings." 
+        ]
+      },
+      {
+        "tag": "age_policy",
+        "patterns": [
+          "do i need to be a certain age",
+          "age limit",
+          "how old to stay",
+          "minimum age"
+        ],
+        "responses": [
+          "There is no set age limit for staying in hostels, though minors must be accompanied by an adult."
+        ]
+      },
+      {
+        "tag": "reservation_method",
+        "patterns": [
+          "do i have to reserve",
+          "book online or walk in",
+          "reservation required",
+          "walk‑in booking"
+        ],
+        "responses": [
+          "We recommend making a reservation to guarantee your spot, but walk‑ins are always welcome." 
+        ]
+      },
+      {
+        "tag": "hotel_vs_hostel",
+        "patterns": [
+          "what's the difference between hotel and hostel",
+          "hostel vs hotel",
+          "hotel or hostel",
+          "why choose a hostel"
+        ],
+        "responses": [
+          "Hotels offer private rooms and bathrooms, while hostels provide dorm‑style accommodation, shared facilities, and a community atmosphere." 
+        ]
+      },
+      {
+        "tag": "location_info",
+        "patterns": [
+          "where are you located",
+          "hostel address",
+          "how to get to the hostel",
+          "location"
+        ],
+        "responses": [
+          "We’re located at 123 Traveler’s Lane, just a 5‑minute walk from Central Station. Let me know if you need directions!"
+        ]
+      },
+      {
+        "tag": "self_check_in",
+        "patterns": [
+          "self check in",
+          "digital check in",
+          "mobile check in",
+          "keyless entry"
+        ],
+        "responses": [
+          "We offer self check‑in via our mobile app—just scan the QR code you’ll receive 24 hours before arrival."
+        ]
+      },
+      {
+        "tag": "after_hours_check_in",
+        "patterns": [
+          "check in after hours",
+          "late arrival",
+          "arrive at midnight",
+          "after hours"
+        ],
+        "responses": [
+          "Our reception is open 24/7, so you can check in anytime, even late at night." 
+        ]
+      },
+      {
+        "tag": "fire_exit",
+        "patterns": [
+          "where is the fire exit",
+          "emergency exit",
+          "evacuation plan",
+          "fire escape"
+        ],
+        "responses": [
+          "Emergency exits are clearly marked on each floor—please check the map on your door and follow illuminated signs."
+        ]
+      },
+      {
+        "tag": "coworking_space",
+        "patterns": [
+          "is there a workspace",
+          "coworking area",
+          "work desk",
+          "digital nomad"
+        ],
+        "responses": [
+          "Yes, we have a dedicated coworking space with high‑speed internet, power outlets, and comfortable seating."
+        ]
+      },
+      {
+        "tag": "languages_spoken",
+        "patterns": [
+          "do you speak english",
+          "languages spoken",
+          "staff language",
+          "multilingual staff"
+        ],
+        "responses": [
+          "Our staff speak English, Spanish, and French. If you need another language, let us know and we’ll do our best to help."
+        ]
+      },
+      {
+        "tag": "lost_key",
+        "patterns": [
+          "i lost my key",
+          "lost keycard",
+          "key replacement",
+          "lost key"
+        ],
+        "responses": [
+          "Oh no! Please come to reception and we’ll issue you a new keycard right away."
+        ]
+      },
+      {
+        "tag": "hostel_etiquette",
+        "patterns": [
+          "hostel etiquette",
+          "norms",
+          "rules of thumb",
+          "do's and don'ts"
+        ],
+        "responses": [
+          "Please respect personal space, clean up after yourself, and observe quiet hours. Avoid hanging items on bunk ladders." 
+        ]
+      },
+      {
+        "tag": "website_info",
+        "patterns": [
+          "what's your website",
+          "website url",
+          "online info",
+          "web address"
+        ],
+        "responses": [
+          "You can find all details and book directly at https://www.examplehostel.com."
+        ]
+      },
+      {
+        "tag": "social_media",
+        "patterns": [
+          "follow you on instagram",
+          "facebook page",
+          "social media",
+          "where can i find you online"
+        ],
+        "responses": [
+          "Connect with us on Instagram @ExampleHostel and like our Facebook page at facebook.com/ExampleHostel!"
+        ]
+      },
+      {
+        "tag": "environmental_policy",
+        "patterns": [
+          "are you eco friendly",
+          "sustainability practices",
+          "green initiatives",
+          "environmental policy"
+        ],
+        "responses": [
+          "We’re committed to sustainability: we use energy‑efficient lighting, recycle waste, and encourage towel reuse.",
+          "Our hostel follows green practices—solar heating, recycling bins, and eco‑friendly toiletries."
+        ]
+      },
+      {
+        "tag": "dietary_restrictions",
+        "patterns": [
+          "any gluten free options",
+          "vegan meals",
+          "food allergies",
+          "special diet"
+        ],
+        "responses": [
+          "We can accommodate vegan, vegetarian, gluten‑free, and other dietary needs—just let us know in advance.",
+          "Please tell us your dietary restrictions and we’ll prepare suitable meal options."
+        ]
+      },
+      {
+        "tag": "referral_program",
+        "patterns": [
+          "refer a friend",
+          "referral discount",
+          "refer and earn",
+          "referral program"
+        ],
+        "responses": [
+          "Refer a friend and you’ll both get 10% off your next stay—ask reception for your referral code.",
+          "Our referral program gives you and your friend a discount—just share your unique link!"
+        ]
+      },
+      {
+        "tag": "newsletter_signup",
+        "patterns": [
+          "join newsletter",
+          "email updates",
+          "subscribe",
+          "mailing list"
+        ],
+        "responses": [
+          "Sign up for our newsletter to get exclusive deals and event updates—what’s your email?",
+          "We send out a monthly newsletter with specials and local tips. Can I add you to the list?"
+        ]
+      },
+      {
+        "tag": "gift_cards",
+        "patterns": [
+          "buy gift card",
+          "gift voucher",
+          "present card",
+          "gift certificate"
+        ],
+        "responses": [
+          "We offer digital gift cards in any amount—let me know how much you’d like to purchase.",
+          "Our gift vouchers make a great present. Would you like one emailed to you or printed?"
+        ]
+      },
+      {
+        "tag": "corporate_bookings",
+        "patterns": [
+          "corporate rate",
+          "business booking",
+          "company stay",
+          "corporate discount"
+        ],
+        "responses": [
+          "We offer special corporate rates for business travelers—please provide your company name.",
+          "For business bookings, we can invoice your company directly. Let me know your dates and pax."
+        ]
+      },
+      {
+        "tag": "mobile_app_features",
+        "patterns": [
+          "hostel app",
+          "mobile app features",
+          "app booking",
+          "download your app"
+        ],
+        "responses": [
+          "Our mobile app lets you check in, chat with staff, and unlock your door—available on iOS and Android.",
+          "Download our app to manage your booking, order room service, and get local recommendations."
+        ]
+      },
+      {
+        "tag": "covid_vaccine_policy",
+        "patterns": [
+          "vaccine required",
+          "covid vaccination",
+          "health pass",
+          "vaccine proof"
+        ],
+        "responses": [
+          "We do not currently require proof of vaccination, but we follow all local health guidelines.",
+          "No vaccine proof needed for stays; we maintain enhanced cleaning protocols for your safety."
+        ]
+      },
+      {
+        "tag": "quiet_floor",
+        "patterns": [
+          "quiet floor",
+          "noise free area",
+          "quiet rooms",
+          "silent floor"
+        ],
+        "responses": [
+          "We have a designated quiet floor—no loud music or talking after 10 PM.",
+          "If you’d like extra peace and quiet, ask for a room on our silent floor."
+        ]
+      },
+      {
+        "tag": "gender_neutral_bathrooms",
+        "patterns": [
+          "unisex bathrooms",
+          "gender neutral washroom",
+          "all‑gender restroom",
+          "bathroom policy"
+        ],
+        "responses": [
+          "We have gender‑neutral bathrooms on each floor, clearly marked for everyone’s comfort.",
+          "All our communal restrooms are unisex and equipped with private stalls."
+        ]
+      },
+      {
+        "tag": "luggage_delivery",
+        "patterns": [
+          "send my luggage",
+          "luggage delivery",
+          "bag transfer",
+          "luggage shipping"
+        ],
+        "responses": [
+          "We can arrange to ship your bags to your next destination—rates start at $5 per bag.",
+          "Ask reception about our luggage forwarding service and we’ll handle the rest."
+        ]
+      },
+      {
+        "tag": "translation_service",
+        "patterns": [
+          "need interpreter",
+          "translation help",
+          "language assistance",
+          "translator"
+        ],
+        "responses": [
+          "We can connect you with an interpreter service for a small fee—what language do you need?",
+          "Let us know which language you require and we’ll arrange translation support."
+        ]
+      }
+    ]
+  }
+  
