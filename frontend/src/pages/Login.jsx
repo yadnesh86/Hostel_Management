@@ -23,7 +23,7 @@ export default function Login() {
 
       // Redirect after successful login
       if (res.status === 200) {
-        navigate('/user_dashboard');
+        navigate('/student/dashboard');
       }
     } catch (err) {
       setMessage(err.response?.data?.message || 'Login failed');
