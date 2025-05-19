@@ -8,22 +8,27 @@ export default function Login() {
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/login', formData);
-      console.log('Login form data:', formData);
+      const res = await axios.post('http://localhost:3001/api/login', formData);
       setMessage(res.data.message);
 
-      // Redirect after successful login
       if (res.status === 200) {
-        navigate('/student/dashboard');
+        // Store the token and user information in localStorage
+        localStorage.setItem('token', res.data.token);
+        localStorage.setItem('user', JSON.stringify(res.data.user));
+
+        // Navigate to the dashboard based on the user's role
+        const user = res.data.user;
+        if (user.role === 'student') {
+          navigate('/student/dashboard');
+        } else if (user.role === 'admin') {
+          navigate('/admin/admindashboard');
+        }
       }
     } catch (err) {
       setMessage(err.response?.data?.message || 'Login failed');

@@ -23,7 +23,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/signup', formData);
+      const res = await axios.post('http://localhost:3001/api/signup', formData);
       setMessage(res.data.message);
       setFormData({ fullName: '', email: '', password: '', role: 'student' }); // Reset form
       setSuccess(true); // Trigger success message and link

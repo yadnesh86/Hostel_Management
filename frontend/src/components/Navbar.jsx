@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link to="/student/dashboard" className="hover:text-yellow-300 transition-colors duration-200">
             User Dashboard
           </Link>
-          <Link to="/admin/dashboard" className="hover:text-yellow-300 transition-colors duration-200">
+          <Link to="/admin/admindashboard" className="hover:text-yellow-300 transition-colors duration-200">
             Admin Dashboard
           </Link>
           <Link to="/login" className="hover:text-yellow-300 transition-colors duration-200">

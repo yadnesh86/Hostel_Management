@@ -2,29 +2,33 @@ import { Link } from "react-router-dom";
 
 const UserNavbar = () => {
   return (
-    <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center shadow">
-      <h1 className="text-xl font-bold">Student Dashboard</h1>
-      <ul className="flex space-x-6 text-sm font-medium">
+    <nav className="min-h-screen w-64 bg-blue-700 text-white flex flex-col px-6 py-8 shadow-lg"
+    style={{
+      fontFamily: "'Poppins', sans-serif",
+    }}
+    >
+      <h1 className="text-2xl font-semibold mb-10 text-center">Student Portal</h1>
+      <ul className="flex flex-col space-y-6 text-base font-medium">
         <li>
-          <Link to="/student/dashboard" className="hover:underline">Dashboard</Link>
+          <Link to="/student/dashboard" className="hover:bg-blue-600 rounded px-3 py-2 block">Dashboard</Link>
         </li>
         <li>
-          <Link to="/student/RoomList" className="hover:underline">Rooms</Link>
+          <Link to="/student/RoomList" className="hover:bg-blue-600 rounded px-3 py-2 block">Rooms</Link>
         </li>
         <li>
-          <Link to="/student/AllotmentStatus" className="hover:underline">Allotment Status</Link>
+          <Link to="/student/AllotmentStatus" className="hover:bg-blue-600 rounded px-3 py-2 block">Allotment Status</Link>
         </li>
         <li>
-          <Link to="/student/fees" className="hover:underline">Fees</Link>
+          <Link to="/student/fees" className="hover:bg-blue-600 rounded px-3 py-2 block">Fees</Link>
         </li>
         <li>
-          <Link to="/student/maintenance" className="hover:underline">Maintenance</Link>
+          <Link to="/student/maintenance" className="hover:bg-blue-600 rounded px-3 py-2 block">Complaint</Link>
         </li>
         <li>
-          <Link to="/student/profile" className="hover:underline">Profile</Link>
+          <Link to="/student/profile" className="hover:bg-blue-600 rounded px-3 py-2 block">Profile</Link>
         </li>
-        <li>
-          <Link to="/login" className="hover:underline text-red-200">Logout</Link>
+        <li className="mt-auto">
+          <Link to="/login" className="hover:bg-red-600 text-red-200 rounded px-3 py-2 block">Logout</Link>
         </li>
       </ul>
     </nav>

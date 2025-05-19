@@ -20,48 +20,25 @@ import StudentManagement from "./pages/admin/StudentManagement";
 import RoomManagement from "./pages/admin/RoomManagement";
 import FeeManagement from "./pages/admin/FeeManagement";
 import AdminMaintenance from "./pages/admin/AdminMaintenance";
-import AdminProfile from "./pages/admin/AdminProfile";
+import AdminHostel from "./pages/admin/AdminHostel";
 
-// Components
+// Layouts
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import UserNavbar from "./components/UserNavbar";
-import AdminNavbar from "./components/AdminNavbar"; // ✅ Create this component
+import MainLayout from "./components/MainLayout";
+import AdminLayout from "./components/AdminLayout";
 
 const AppWrapper = () => {
   const location = useLocation();
   const path = location.pathname;
 
-  // Define groups of routes
   const publicRoutes = ["/", "/login", "/signup", "/hostel"];
-  const studentRoutes = [
-    "/student/dashboard",
-    "/student/RoomList",
-    "/student/AllotmentStatus",
-    "/student/profile",
-    "/student/fees",
-    "/student/maintenance",
-  ];
-  const adminRoutes = [
-    "/admin/dashboard",
-    "/admin/students",
-    "/admin/rooms",
-    "/admin/fees",
-    "/admin/maintenance",
-    "/admin/profile",
-  ];
-
-  // Conditionally show navbars/footers
   const showDefaultNavbar = publicRoutes.includes(path);
-  const showUserNavbar = studentRoutes.includes(path);
-  const showAdminNavbar = adminRoutes.includes(path);
-  const showFooter = publicRoutes.includes(path); // Optional: customize if needed
+  const showFooter = publicRoutes.includes(path);
 
   return (
     <div className="min-h-screen bg-gray-50">
       {showDefaultNavbar && <Navbar />}
-      {showUserNavbar && <UserNavbar />}
-      {showAdminNavbar && <AdminNavbar />}
 
       <Routes>
         {/* Public Routes */}
@@ -70,21 +47,25 @@ const AppWrapper = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/hostel" element={<Hostel />} />
 
-        {/* Student Dashboard Routes */}
-        <Route path="/student/dashboard" element={<UserDashboard />} />
-        <Route path="/student/RoomList" element={<RoomList />} />
-        <Route path="/student/AllotmentStatus" element={<AllotmentStatus />} />
-        <Route path="/student/profile" element={<StudentProfile />} />
-        <Route path="/student/fees" element={<StudentFees />} />
-        <Route path="/student/maintenance" element={<StudentMaintenance />} />
+        {/* Student Routes under MainLayout */}
+        <Route path="/student" element={<MainLayout />}>
+          <Route path="dashboard" element={<UserDashboard />} />
+          <Route path="RoomList" element={<RoomList />} />
+          <Route path="AllotmentStatus" element={<AllotmentStatus />} />
+          <Route path="profile" element={<StudentProfile />} />
+          <Route path="fees" element={<StudentFees />} />
+          <Route path="maintenance" element={<StudentMaintenance />} />
+        </Route>
 
-        {/* Admin Dashboard Routes */}
-        <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        <Route path="/admin/students" element={<StudentManagement />} />
-        <Route path="/admin/rooms" element={<RoomManagement />} />
-        <Route path="/admin/fees" element={<FeeManagement />} />
-        <Route path="/admin/maintenance" element={<AdminMaintenance />} />
-        <Route path="/admin/profile" element={<AdminProfile />} />
+        {/* Admin Routes under AdminLayout */}
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route path="admindashboard" element={<AdminDashboard />} />
+          <Route path="adminstudents" element={<StudentManagement />} />
+          <Route path="adminrooms" element={<RoomManagement />} />
+          <Route path="adminfees" element={<FeeManagement />} />
+          <Route path="adminmaintenance" element={<AdminMaintenance />} />
+          <Route path="adminhostel" element={<AdminHostel />} />
+        </Route>
       </Routes>
 
       {showFooter && <Footer />}
